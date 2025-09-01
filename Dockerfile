@@ -10,10 +10,10 @@ ENV PATH="/home/user/.local/bin:$PATH"
 WORKDIR /app
 
 # Copy requirements and install
-COPY --chown=user ./requirements.txt requirements.txt
+COPY --chown=user ./textModel/requirements.txt requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-# Copy the textModel folder contents into /app
+# Copy the rest of the app
 COPY --chown=user ./textModel/ . 
 
 # Expose the port your Flask app will run on
@@ -25,4 +25,3 @@ ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_RUN_PORT=7860
 
 CMD ["flask", "run"]
-
