@@ -10,4 +10,5 @@ requests>=2.25.0
 tqdm>=4.62.0
 cloudinary
 gunicorn
-flask-pymongo==2.3.0 
+flask-pymongo
+textblob
