@@ -8,13 +8,14 @@ from pymongo.errors import ConnectionFailure
 import random
 import certifi
 from textblob import TextBlob
+import os
 
 # --- Set up logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # --- Database Connection ---
-MONGO_URI = "mongodb+srv://soniyavitkar2712:soniya_27@cluster0.slai2ew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = os.getenv("MONGO_URI")
 client = None
 db = None
 songs_collection = None
