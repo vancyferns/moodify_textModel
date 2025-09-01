@@ -1,5 +1,5 @@
 # Use official Python image
-FROM python:3.9-slim
+FROM FROM python:3.11-slim
 
 # Create a non-root user
 RUN useradd -m -u 1000 user

@@ -1,5 +1,5 @@
 flask==2.3.3
-flask-cors==4.0.0
+fla=sk-cors=4.0.0
 torch>=1.9.0
 transformers>=4.20.0
 nltk>=3.8
@@ -10,5 +10,4 @@ requests>=2.25.0
 tqdm>=4.62.0
 cloudinary
 gunicorn
-flask-pymongo
-os
+flask-pymongo==2.3.0 
