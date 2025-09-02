@@ -1,9 +1,8 @@
 from pymongo import MongoClient
 import certifi
-import os
 
 # MongoDB connection string
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI = "mongodb+srv://soniyavitkar2712:soniya_27@cluster0.slai2ew.mongodb.net/moodify_db?retryWrites=true&w=majority&appName=Cluster0"
 if not MONGO_URI:
     raise ValueError("MONGO_URI environment variable is not set")
 
