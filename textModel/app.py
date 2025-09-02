@@ -265,7 +265,7 @@ def get_all_emotions():
 if __name__ == '__main__':
     logger.info("Starting Emotion Detection API...")
     if emotion_classifier or initialize_model():
-        app.run(debug=True, host='0.0.0.0', port=7680)
+        app.run(debug=True, host='0.0.0.0', port=7860)
     else:
         logger.error("Could not start the server because the model failed to initialize.")
 
